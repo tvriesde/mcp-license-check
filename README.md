@@ -1,5 +1,7 @@
 # MCP License Check
 
+Simple MCP Server which provides vehicle data based on dutch license plates.
+
 ## How to Use with Claude Desktop
 
 1. Ensure [Node.js](https://nodejs.org/) is installed locally.
