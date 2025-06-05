@@ -51,39 +51,6 @@ async function getVehicleData<T>(license: string): Promise<T | null> {
   }
 }
 
-/*
-function parsePredictions(predictions: any) {
-  return predictions.map((predictions: any) => ({
-    hometeam: predictions.teams.home.name,
-    awayTeam: predictions.teams.away.name,
-    winner: predictions.predictions.winner.name,
-    winnercomment: predictions.predictions.winner.comment,
-    winordraw: predictions.predictions.winordraw,
-    goalshome: predictions.predictions.goals.home,
-    goalsaway: predictions.predictions.goals.away,
-    advice: predictions.predictions.advice,
-    percenthome: predictions.predictions.percent.home,
-    percentaway: predictions.predictions.percent.away,
-    percentdraw: predictions.predictions.percent.draw,
-  }));
-}
-
-function parseFixtures(fixtures: any) {
-  return fixtures.map((fixture: any) => ({
-    id: fixture.fixture.id,
-    homeTeam: fixture.teams.home.name,
-    awayTeam: fixture.teams.away.name,
-    goalsHome: fixture.goals.home,
-    goalsAway: fixture.goals.away,
-    scoreHalftime: fixture.score.halftime,
-    scoreFulltime: fixture.score.fulltime,
-    scoreExtraTime: fixture.score.extratime,
-    scorePenalty: fixture.score.penalty,
-    date: fixture.fixture.date,
-    venue: fixture.fixture.venue.name,
-  }));
-}*/
-
 server.tool(
   "get-vehicle-information-based-on-license",
   "Get vehicle information based on license plate",
